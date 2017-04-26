@@ -6,6 +6,8 @@
           <%= f.text_area :content, class: 'form-control', rows: 5 %>
         </div>
         <%= f.submit 'Post', class: 'btn btn-primary btn-block' %>
+        <br>
+        <%= link_to 'like', likes_user_path(@user), class: 'btn btn-success btn-block'%>
       <% end %>
     </aside>
     <div class="col-xs-8">
